@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body class="bg-white" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top">
+        <nav class="navbar bg-body-tertiary px-3 mb-3 navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top"
+            id="navbar-example2">
             <div class="container-fluid container-md">
                 <a class="navbar-brand text-uppercase nav-font letter-space" href="#">daniels</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -58,18 +58,17 @@
                             <a class="nav-link text-muted text-black p-0 mx-lg-4 my-lg-0 my-1" href="#team">team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted text-black p-0 mx-lg-4 my-lg-0 my-1"
+                            <a class="nav-link text-muted text-black p-0 ms-lg-4 my-lg-0 my-1"
                                 href="#contact">contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
 
     <main>
-
+        <!-- home start -->
         <section class="home vh-100 d-flex justify-content-center align-items-center" id="home">
 
             <article class="text-white w-100 d-flex flex-column justify-content-center align-items-center text-center">
@@ -87,7 +86,8 @@
             </article>
 
         </section>
-
+        <!-- home end -->
+        <!-- about start -->
         <section class="about-me mb-5" id="about">
 
             <div class="container-md container-fluid">
@@ -103,7 +103,7 @@
                         <article>
 
                             <h4 class="fs-5 fw-bolder text-capitalize font-montserrat">about me</h4>
-                            <p class="text-capitalize text-muted">UI / UX Designer & Web Developer</p>
+                            <p class="text-capitalize text-muted word">UI / UX Designer & Web Developer</p>
 
                             <caption>
                                 <p class="text-muted">i am <span class="text-capitalize">jerry daniels</span>Lorem Ipsum
@@ -153,12 +153,13 @@
             </div>
 
         </section>
+        <!-- about end -->
+        <!-- services start -->
+        <section class="services mb-5 pb-5 gray-back" id="services">
 
-        <section class="services mb-5 py-5 gray-back" id="services">
-
-            <article class="mb-5 position-relative d-flex m-auto py-5">
+            <header class="mb-5 position-relative d-flex m-auto py-5">
                 <h6 class="fs-1 text-capitalize header-font">services.</h6>
-            </article>
+            </header>
 
             <div class="container-md container-fluid">
 
@@ -273,12 +274,13 @@
             </div>
 
         </section>
-
+        <!-- services end -->
+        <!-- portfolio start -->
         <section class="works pb-5 mb-5" id="works">
 
-            <article class="mb-5 position-relative d-flex m-auto py-5">
-                <h6 class="fs-1 text-capitalize header-font">works.</h6>
-            </article>
+            <header class="mb-5 position-relative d-flex m-auto py-5">
+                <h6 class="fs-1 text-capitalize header-font">portfolio.</h6>
+            </header>
 
             <ul class="nav nav-tabs border-0 d-flex justify-content-center mb-5" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -314,20 +316,24 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 position-relative">
-                                <img src="./imgs/portfolio/2.jpg" alt="charger">
+                                <img src="./imgs/portfolio/2.jpg" alt="book">
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
                                 </div>
                             </div>
@@ -336,21 +342,27 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 position-relative">
-                                <img src="./imgs/portfolio/4.jpg" alt="charger">
+                                <img src="./imgs/portfolio/4.jpg" alt="lamp">
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 position-relative">
@@ -358,10 +370,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 position-relative">
@@ -369,10 +384,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -391,10 +409,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 position-relative">
@@ -402,10 +423,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -422,10 +446,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 position-relative">
@@ -433,10 +460,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -452,10 +482,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
 
                             </div>
@@ -464,9 +497,11 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
                                 </div>
                             </div>
@@ -475,10 +510,13 @@
                                 <div
                                     class="animation d-flex justify-content-center align-items-center flex-column position-absolute top-0">
                                     <p class="fw-bold text-uppercase">web design</p>
-                                    <div>
-                                        <i class="fa fa-chain-broken"></i>
-                                        <i class="fa fa-search-plus"></i>
+                                    <div class="gap-2 d-flex">
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-chain-broken"></i>
+                                        <i
+                                            class="fa bg-black d-flex justify-content-center align-items-center flex-row text-white rounded rounded-circle fa-search-plus"></i>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -487,14 +525,15 @@
 
                 </div>
         </section>
-
+        <!-- portfolio end -->
+        <!-- clients start -->
         <section class="clients gray-back pb-5 mb-5" id="clients">
 
-            <article class="mb-5 position-relative d-flex m-auto py-5">
-                <h6 class="fs-1 text-capitalize header-font">services.</h6>
-            </article>
+            <header class="position-relative d-flex m-auto py-5">
+                <h6 class="fs-1 text-capitalize header-font">Testimonials.</h6>
+            </header>
 
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide p-0">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="carousel-indicat bg-dark-subtle active rounded rounded-circle" aria-current="true"
@@ -508,7 +547,7 @@
                     <div class="carousel-item active">
                         <div>
                             <div class="d-flex justify-content-center align-items-center rounded rounded-circle m-auto">
-                                <img class="rounded rounded-circle" src="./imgs/1_New1.jpg" alt="">
+                                <img class="rounded rounded-circle" src="./imgs/1_New1.jpg" alt="man">
                             </div>
                             <article class="text-center d-flex justify-content-center w-75 m-auto flex-column mt-5">
                                 <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
@@ -524,7 +563,7 @@
                     <div class="carousel-item">
                         <div>
                             <div class="d-flex justify-content-center align-items-center rounded rounded-circle m-auto">
-                                <img class="rounded rounded-circle" src="./imgs/testi-1.jpg" alt="">
+                                <img class="rounded rounded-circle" src="./imgs/testi-1.jpg" alt="man">
                             </div>
                             <article class="text-center d-flex justify-content-center w-75 m-auto flex-column mt-5">
                                 <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
@@ -540,7 +579,7 @@
                     <div class="carousel-item">
                         <div>
                             <div class="d-flex justify-content-center align-items-center rounded rounded-circle m-auto">
-                                <img class="rounded rounded-circle" src="./imgs/testi-2.jpg" alt="">
+                                <img class="rounded rounded-circle" src="./imgs/testi-2.jpg" alt="man">
                             </div>
                             <article class="text-center d-flex justify-content-center w-75 m-auto flex-column mt-5">
                                 <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
@@ -557,7 +596,8 @@
             </div>
 
         </section>
-
+        <!-- clients end -->
+        <!-- counter start -->
         <section class="counter py-5">
 
             <div class="container-fluid container-md">
@@ -592,18 +632,19 @@
 
 
         </section>
-
+        <!-- counter end -->
+        <!-- team start -->
         <section class="team gray-back  pb-5" id="team">
 
-            <article class="mb-5 position-relative d-flex m-auto py-5">
+            <header class="mb-5 position-relative d-flex m-auto py-5">
                 <h6 class="fs-1 text-capitalize header-font">our team.</h6>
-            </article>
+            </header>
 
             <div class="container-md container-fluid">
                 <div class="row g-3">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <figure class="col-12 col-md-6 col-lg-4">
                         <div class="position-relative overflow-hidden">
-                            <img src="./imgs/1.jpg" alt="" />
+                            <img src="./imgs/1.jpg" alt="human" />
                             <div class="position-absolute d-flex justify-content-center align-items-center m-2 top-0">
                                 <i
                                     class="fa-brands mx-2 d-flex justify-content-center align-items-center rounded rounded-circle bg-black text-white fa-xl fa-facebook"></i>
@@ -615,14 +656,14 @@
                                     class="fa-brands mx-2 d-flex justify-content-center align-items-center rounded rounded-circle bg-black text-white fa-xl fa-linkedin"></i>
                             </div>
                         </div>
-                        <div class="text-white text-center py-2">
+                        <figcaption class="text-white text-center py-2">
                             <h6 class="text-capitalize fw-normal">john doe</h6>
                             <p class="text-uppercase fw-bold">front-end Developer</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                        </figcaption>
+                    </figure>
+                    <figure class="col-12 col-md-6 col-lg-4">
                         <div class="position-relative overflow-hidden">
-                            <img src="./imgs/2.jpg" alt="" />
+                            <img src="./imgs/2.jpg" alt="human" />
                             <div class="position-absolute d-flex justify-content-center align-items-center m-2 top-0">
                                 <i
                                     class="fa-brands mx-2 d-flex justify-content-center align-items-center rounded rounded-circle bg-black text-white fa-xl fa-facebook"></i>
@@ -634,14 +675,14 @@
                                     class="fa-brands mx-2 d-flex justify-content-center align-items-center rounded rounded-circle bg-black text-white fa-xl fa-linkedin"></i>
                             </div>
                         </div>
-                        <div class="text-white text-center py-2">
+                        <figcaption class="text-white text-center py-2">
                             <h6 class="text-capitalize fw-normal">dave wood</h6>
                             <p class="text-uppercase fw-bold">back-end Developer</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                        </figcaption>
+                    </figure>
+                    <figure class="col-12 col-md-6 col-lg-4">
                         <div class="position-relative overflow-hidden">
-                            <img src="./imgs/1.jpg" alt="" />
+                            <img src="./imgs/1.jpg" alt="human" />
                             <div class="position-absolute d-flex justify-content-center align-items-center m-2 top-0">
                                 <i
                                     class="fa-brands mx-2 d-flex justify-content-center align-items-center rounded rounded-circle bg-black text-white fa-xl fa-facebook"></i>
@@ -653,21 +694,22 @@
                                     class="fa-brands mx-2 d-flex justify-content-center align-items-center rounded rounded-circle bg-black text-white fa-xl fa-linkedin"></i>
                             </div>
                         </div>
-                        <div class="text-white text-center py-2">
+                        <figcaption class="text-white text-center py-2">
                             <h6 class="text-capitalize fw-normal">claire chedd</h6>
                             <p class="text-uppercase fw-bold">back-end Developer</p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
 
         </section>
-
+        <!-- team end -->
+        <!-- contact start -->
         <section class="contact" id="contact">
 
-            <article class="mb-5 position-relative d-flex m-auto py-5">
+            <header class="mb-5 position-relative d-flex m-auto py-5">
                 <h6 class="fs-1 text-capitalize header-font">contact us.</h6>
-            </article>
+            </header>
 
             <div class="container-fluid container-md">
                 <div class="m-auto row icons-2 justify-content-center align-items-center">
@@ -698,7 +740,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid container-md">
+            <div class="container-fluid container-md pb-5">
                 <div>
                     <form class="py-5 m-auto">
                         <div class="row g-3 justify-content-center align-items-center">
@@ -730,11 +772,11 @@
             </div>
 
         </section>
-
+        <!-- contact end -->
     </main>
 
     <footer class="d-flex justify-content-center align-items-center py-4">
-        <p class="main-para-font">Copy Right 2018 © By Daniels All Rights Reserved</p>
+        <p class="main-para-font fs-6 fw-normal">Copy Right 2018 © By Daniels All Rights Reserved</p>
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>

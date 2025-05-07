@@ -15,11 +15,11 @@
     text-align: center;
 }
 
-section article {
+section header {
     width: fit-content;
 }
 
-section article h6.header-font::after {
+section header h6.header-font::after {
     content: '';
     position: absolute;
     height: 10px;
@@ -47,8 +47,7 @@ section article h6.header-font::after {
 }
 
 html {
-    scroll-padding-top: 100px !important;
-    scroll-behavior: smooth;
+    scroll-padding-top: 69px !important;
 }
 
 * {
@@ -56,6 +55,7 @@ html {
 }
 
 body {
+    scroll-padding-top: 69px !important;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -70,14 +70,15 @@ img {
     color: #000 !important;
     width: fit-content;
     font-weight: bold;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
 }
 
-/* //////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .home {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg.jpg);
-    background-position: 20% 20%;
+    background-position: top top;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .home .title {
@@ -93,9 +94,10 @@ img {
 
 .home .fa-brands {
     background-color: rgba(0, 0, 0, 0.44);
+    cursor: pointer;
 }
 
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .about-me .container-md .row .img-thumbnail::after {
     content: '';
     position: absolute;
@@ -105,6 +107,10 @@ img {
     width: 68%;
     height: 68%;
     z-index: -1;
+}
+
+.about-me .container-md .row article .word {
+    word-spacing: 4px;
 }
 
 .about-me .row .col-12 .d-flex .overflow-hidden {
@@ -143,7 +149,7 @@ img {
     border-color: #000 !important;
 }
 
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .services .container-md .row .col-md-6 .card .card-body .icon {
     width: 90px;
     height: 90px;
@@ -159,7 +165,7 @@ img {
     background-color: #000;
 }
 
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     border-bottom: 2px solid #000 !important;
@@ -176,30 +182,42 @@ img {
     transition: all 600ms;
 }
 
-.works .tab-content .tab-pane .col-12:hover .animation {
+.works .tab-content .tab-pane .container-md .row .col-12:hover .animation {
     transform: translateY(0);
     opacity: 1;
 }
 
-.works .tab-content .tab-pane .col-12 .animation div .fa-chain-broken {
-    transition: margin 600ms;
-    margin-bottom: 1.1rem;
+.works .tab-content .tab-pane .container-md .row .col-12 .animation p.fw-bold {
+    transition: all 600ms;
+    margin-bottom: 3.1rem !important;
 }
 
-.works .tab-content .tab-pane .col-12 .animation div .fa-search-plus {
-    transition: margin 600ms;
-    margin-top: 1.1rem;
+.works .tab-content .tab-pane .container-md .row .col-12:hover .animation p.fw-bold {
+    margin-bottom: 0.5rem !important;
 }
 
-.works .tab-content .tab-pane .col-12:hover .animation div .fa-chain-broken {
+.works .tab-content .tab-pane .container-md .row .col-12 .animation .gap-2 .fa-chain-broken,
+.works .tab-content .tab-pane .container-md .row .col-12 .animation .gap-2 .fa-search-plus {
+    transition: all 600ms;
+    margin-top: 0rem;
+    width: 30px;
+    height: 30px;
+}
+
+.works .tab-content .tab-pane .container-md .row .col-12:hover .animation .gap-2 .fa-chain-broken,
+.works .tab-content .tab-pane .container-md .row .col-12:hover .animation .gap-2 .fa-search-plus {
     margin: 0;
 }
 
-.works .tab-content .tab-pane .col-12:hover .animation div .fa-search-plus {
-    margin: 0;
+.works .tab-content .tab-pane .container-md .row .col-12 .animation .gap-2 .fa-chain-broken:hover,
+.works .tab-content .tab-pane .container-md .row .col-12 .animation .gap-2 .fa-search-plus:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #000;
+    cursor: pointer;
 }
 
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .carousel-indicators .active {
     background-color: #869791;
 }
@@ -214,7 +232,7 @@ img {
 }
 
 
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .content {
     display: flex;
     justify-content: space-around;
@@ -228,7 +246,7 @@ img {
     color: #000;
 }
 
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .team .container-md .row .col-12 .position-relative .top-0 {
     background-color: rgba(255, 255, 255, 0.7);
     left: 0;
@@ -262,6 +280,7 @@ img {
     background-color: #fff !important;
     color: #000 !important;
     border: 1px solid #000;
+    cursor: pointer;
 }
 
 .team .container-md .row .col-12 .text-white {
@@ -276,7 +295,7 @@ img {
     font-size: 20px;
 }
 
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .contact .container-md .row .col-12 i {
     width: 3.9rem;
     height: 3.9rem;
@@ -309,6 +328,7 @@ img {
 .contact .container-md form textarea {
     background-color: #f4f4f4;
     border: none;
+    max-height: 150px;
 }
 
 .contact .container-md form textarea:focus {
@@ -326,9 +346,7 @@ img {
     border: 1px solid #000;
 }
 
-/* ////////////////////////////////////////////////////// */
-/* ////////////////////////////////////////////////////// */
-/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer {
     background-color: #1C1C1C;
     color: #748182;
